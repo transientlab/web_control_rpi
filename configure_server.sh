@@ -2,6 +2,7 @@
 sudo apt-get install curl wget wakeonlan git &&
 
 # instal mqtt tools
+# hivemq-broker f30aecedfa9d4b97a6d732678e116680.s2.eu.hivemq.cloud:8883
 sudo apt-get install mosquitto mosquitto-clients &&
 
 # node.js server
@@ -30,11 +31,11 @@ sudo make install &&
 sudo systemctl enable shairport-sync &&
 sudo service shairport-sync start
 
-# airplay config available: https://pimylifeup.com/raspberry-pi-airplay-receiver/
 
 # ---  common commands
 ## capture camera input
 # ffmpeg -f video4linux2 -i /dev/video0 out.mpeg -t 00:00:10
+# ffplay czesc.mp3 -nodisp -loop 1 -autoexit -af "volume=0.3"
 
 ## wifi off
 # sudo ifconfig wlan0 down
