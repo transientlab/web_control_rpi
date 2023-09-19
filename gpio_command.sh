@@ -100,11 +100,11 @@ done
 
 
 pins_configure_all
-pin_test_output 2
-pin_test_output 3
-pin_test_output 14
-pin_test_output 15
-pin_test_output 17
-pin_test_output 27
-pin_test_output 22
-pin_test_output 23
+# pin_test_output 2
+# pin_test_output 3
+# pin_test_output 14
+# pin_test_output 15
+# pin_test_output 17
+# pin_test_output 27
+# pin_test_output 22
+# pin_test_output 23

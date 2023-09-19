@@ -1,0 +1,13 @@
+[Unit]
+Description=sh_web_controller
+After=network.target
+StartLimitIntervalSec=1
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=kr315
+ExecStart=/bin/bash -c 'cd /home/kr315/web_control_rpi && node connect.js'
+
+[Install]
+WantedBy=multi-user.target

@@ -24,7 +24,7 @@ app.get('/command/:id/:var1/', (req, res) => {
 
   exec(`sh ${shellScript}`, (error, stdout, stderr) => {
     if (error) {
-      console.error('error:', error);
+      console.error('error: ', error);
       res.sendStatus(500);
     } else {
       console.log(shellScript);
