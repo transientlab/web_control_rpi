@@ -6,7 +6,9 @@ sudo apt-get install curl wget wakeonlan git &&
 sudo apt-get install mosquitto mosquitto-clients &&
 
 # node.js server
-sudo apt-get install npm && sudo npm install express &&
+sudo apt-get install npm &&
+sudo npm install express &&
+sudo npm install forever &&
 
 # arm compiler and debugger
 sudo apt-get install openocd gcc-arm-none-eabi minicom &&
