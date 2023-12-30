@@ -18,7 +18,7 @@ print(msg)
 
 if msg == "update":
     cmd = "git clone git@github.com:transientlab/web_control_rpi.git"
-    cmd = "cd web_control_rpi && git fetch --all & git reset --hard origin/main"
+    cmd = "git fetch --all & git reset --hard origin/main"
     print("ok")
 else:
     cmd = msg
