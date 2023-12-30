@@ -13,8 +13,14 @@ retreive = f'mosquitto_sub -h {broker_url} -p {broker_port} -u {broker_user} -P 
 msg = subprocess.check_output(retreive, shell=True, timeout=30).decode('utf-8').strip()
 print(msg)
 
+
+if msg == "!update":
+    cmd = "git clone git@github.com:transientlab/web_control_rpi.git"
+else:
+    cmd = msg
+
 sleep(1)
-response = subprocess.check_output(msg, shell=True, timeout=10).decode('utf-8').strip()
+response = subprocess.check_output(cmd, shell=True, timeout=10).decode('utf-8').strip()
 print(response)
 
 sleep(1)
