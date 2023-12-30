@@ -1,4 +1,4 @@
-# nowy plik
+# nowiutki
 
 import subprocess
 from time import sleep
