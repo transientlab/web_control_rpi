@@ -1,3 +1,5 @@
+# nowy plik
+
 import subprocess
 from time import sleep
 
@@ -14,9 +16,10 @@ msg = subprocess.check_output(retreive, shell=True, timeout=30).decode('utf-8').
 print(msg)
 
 
-if msg == "!update":
+if msg == "update":
     cmd = "git clone git@github.com:transientlab/web_control_rpi.git"
-    cmd = "git fetch --all & git reset --hard origin/main"
+    cmd = "cd web_control_rpi && git fetch --all & git reset --hard origin/main"
+    print("ok")
 else:
     cmd = msg
 
